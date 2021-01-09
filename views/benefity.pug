@@ -1,8 +1,61 @@
 extends benefityBase
 
 block content
+  header.header
+    .navigation-wrap.start-header.start-style.animate__bounceInDown.animate__animated
+      .container
+        .row
+          .col-12
+            nav.navbar.navbar-expand-md
+              a.navbar-brand(href='/')
+                img(src='/img/logo2.png' alt='logo')
+              .menu-wrapper.navbar-toggler.p-0(data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                .hamburger-menu
+              #navbarSupportedContent.collapse.navbar-collapse.links
+                ul.navbar-nav.ml-auto.py-4.py-md-0
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/') Home
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') About
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/gallery')
+                        span Gallery
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/rules')
+                        span Rules
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Services
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/memberships')
+                        span Memberships
+                      a.dropdown-item.overlayLeftBtn.mt-2.mb-2.pl-3(href='/group-exercises')
+                        span
+                          | Group
+                          br
+                          | exercises
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/relax')
+                        span Relax
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/sport-areas')
+                        span
+                          | Sport
+                          br
+                          | Areas
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/trainers') Trainers
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Find gym
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn(href='/regions')
+                        span Regions
+                      a.dropdown-item.overlayLeftBtn(href='/extras')
+                        span Extras
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/about') Contact
+                  .nav-item.languages
+                    a(href='https://stargym.herokuapp.com/benefity')
+                      img.sk_flag(src='/img/slovakia.png' alt='sk_flag')
+                    img.uk_flag(src='/img/uk.png' alt='uk_flag')
   main
-    h2 Benefity
+    h2 Extras
     .container-fluid.mt-5
       .row
         .col-12.col-sm-6.col-xl-3
@@ -10,23 +63,23 @@ block content
             .card-body.align-items-center
               h5.card-title.text-center.font-weight-bold wifi
               i.fas.fa-wifi.fa-7x
-              p.card-text.text-center Bezplatné internetové wifi pripojenie pre každého
+              p.card-text.text-center Free Wifi connection for everyone
         .col-12.col-sm-6.col-xl-3
           .card.p-3.text-white.mb-5
             .card-body.align-items-center
-              h5.card-title.text-center.font-weight-bold parkovisko
+              h5.card-title.text-center.font-weight-bold Car park
               i.fas.fa-parking.fa-7x
               p.card-text.text-center
-                | Parkovanie zadarmo priamo pred fitness centrom
+                | Free parking for everyone just next to the gym
         .col-12.col-sm-6.col-xl-3
           .card.p-3.text-white.mb-5
             .card-body.align-items-center
-              h5.card-title.text-center.font-weight-bold tréning zdarma
+              h5.card-title.text-center.font-weight-bold Training for free
               i.fas.fa-gift.fa-7x
-              p.card-text.text-center Možnosť odcvičit prvý tréning zdarma
+              p.card-text.text-center First training day in our gym is for free
         .col-12.col-sm-6.col-xl-3
           .card.p-3.text-white.mb-5
             .card-body.align-items-center
-              h5.card-title.text-center.font-weight-bold Klimatizované priestory
+              h5.card-title.text-center.font-weight-bold Air-conditioned areas
               i.fas.fa-fan.fa-7x
-              p.card-text.text-center Všetky fitká su klimatizované
+              p.card-text.text-center All gyms have air-conditioned interior places

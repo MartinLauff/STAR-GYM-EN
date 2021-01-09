@@ -1,20 +1,71 @@
 extends sportove-priestoryBase
 
 block content
+  header.header
+    .navigation-wrap.start-header.start-style.animate__bounceInDown.animate__animated
+      .container
+        .row
+          .col-12
+            nav.navbar.navbar-expand-md
+              a.navbar-brand(href='/')
+                img(src='/img/logo2.png' alt='logo')
+              .menu-wrapper.navbar-toggler.p-0(data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                .hamburger-menu
+              #navbarSupportedContent.collapse.navbar-collapse.links
+                ul.navbar-nav.ml-auto.py-4.py-md-0
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/') Home
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') About
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/gallery')
+                        span Gallery
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/rules')
+                        span Rules
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Services
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/memberships')
+                        span Memberships
+                      a.dropdown-item.overlayLeftBtn.mt-2.mb-2.pl-3(href='/group-exercises')
+                        span
+                          | Group
+                          br
+                          | exercises
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/relax')
+                        span Relax
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/sport-areas')
+                        span
+                          | Sport
+                          br
+                          | Areas
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/trainers') Trainers
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Find gym
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn(href='/regions')
+                        span Regions
+                      a.dropdown-item.overlayLeftBtn(href='/extras')
+                        span Extras
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/about') Contact
+                  .nav-item.languages
+                    a(href='https://stargym.herokuapp.com/sportove-priestory')
+                      img.sk_flag(src='/img/slovakia.png' alt='sk_flag')
+                    img.uk_flag(src='/img/uk.png' alt='uk_flag')
   main
-    h2.sport__title Športové priestory
+    h2.sport__title Sport areas
     p.sport__paragraph
-      | V našich priestoroch nájdete viac, než len posilňovacie stroje. V priestoroch Star
-      | Gym
-      | Sport ponúkame viaceré miesta, kde si môžete zlepšiť formu.
+      | In our sport areas you can find more than just exercise machines. 
+      | Star Gym offers you many places, where you can get in shape.
     section.sport__grid
       .title.sport__content.sport__content--1
         h3.podsekcia__title Bazény
         p.black.sport__par.sauna__par.text-white
-          | V Star
-          | Gym Sport sa nachádza plavecký nerezový bazén. Jeden
-          | vstup do bazéna je na 1,5 hodiny. Čas sa začína rátať
-          | prechodom cez turniket.
+          | In Star
+          | Gym Sport there is a swimming pool. You are able to buy 
+          | a ticket to the pool for 2 hours for each entry.
       .sport__img.sport__img--1
         img(src='/img/sportArea/bazeny.jpg' alt='wellness_picture')
       .rozpis.sport__rozvrh.sport__rozvrh--1
@@ -22,13 +73,13 @@ block content
           thead
             tr
               th
-                h2 Utorok - Streda
+                h2 Tuesday - Wednesday
           tbody
             tr
               td 10:00 - 13:00
             tr
               th
-                h2 Sobota - Nedeľa
+                h2 Saturday - Sunday
             tr
               td 12:00 - 13:00
       .rozpis.sport__rozvrh.sport__rozvrh--2
@@ -36,36 +87,36 @@ block content
           thead
             tr
               th
-                h2 Streda - Piatok
+                h2 Wednesday - Friday
           tbody
             tr
               td 8:00 - 16:00
             tr
               th
-                h2 Sobota - Nedeľa
+                h2 Saturday - Sunday
             tr
               td 9:00 - 12:00
       .sport__img.sport__img--2
         img(src='/img/sportArea/ihriska.jpg' alt='wellness_picture')
       .title.sport__content.sport__content--2
         h3.podsekcia__title.multi
-          | Vonkajšie
+          | Outside
           br
-          |  ihriská
+          |  playground
         p.black.sport__par.sauna__par.text-white
-          | V
-          | našom športovom svete nájdete športové ihríská určené na:
+          | In
+          | our Star Gym you can find lot of sport fields for :
           br
-          | futbal, hádzanú a volejbal.
+          | football and voleyball.
       .title.sport__content.sport__content--3
         h3.podsekcia__title.box
-          | Boxerský
+          | Boxer
           br
           |  ring
         p.black.sport__par.sauna__par.text-white
           | Star
-          | Gym Sport obsahuje aj špecialnú prevádzku ako je
-          | box zóna s ringom.
+          | Gym Sport includes a special boxing ring 
+          | as well.
       .sport__img.sport__img--3
         img(src='/img/sportArea/box.jpg' alt='wellness_picture')
       .rozpis.sport__rozvrh.sport__rozvrh--3
@@ -73,13 +124,13 @@ block content
           thead
             tr
               th
-                h2 Pondelok - Štvrtok
+                h2 Monday - Thursday
           tbody
             tr
               td 16:00 - 20:00
             tr
               th
-                h2 Sobota - Nedeľa
+                h2 Saturday - Sunday
             tr
               td 8:00 - 9:00
       .rozpis.sport__rozvrh.sport__rozvrh--4
@@ -87,30 +138,30 @@ block content
           thead
             tr
               th
-                h2 Utorok - Piatok
+                h2 Tuesday - Friday
           tbody
             tr
               td 12:30 - 17:00
             tr
               th
-                h2 Sobota - Nedeľa
+                h2 Saturday - Sunday
             tr
               td 8:00 - 12:00
       .sport__img.sport__img--4
         img(src='/img/sportArea/basketbal.jpg' alt='wellness_picture')
       .title.sport__content.sport__content--4
-        h3.podsekcia__title Basketbal
+        h3.podsekcia__title Basketball
         p.black.sport__par.sauna__par.text-white
-          | Vo
-          | vonkajších priestoroch nájdete aj basketbalové ihrisko,
-          | ktoré možete za vhodného počasia voľne využívať.
+          | In
+          | outside areas there is a basketball pitch.
+          | Feel free to play basketball with your friends there.
       .title.sport__content.sport__content--5
         h3.podsekcia__title Tenis
         p.black.sport__par.sauna__par.text-white
           | Star
-          | Gym Sport ponúka aj tenisové kurty
-          | s
-          | možnosťou ich prenájmu aj bez vlastnenia permamentky.
+          | Gym Sport offers tennis courts 
+          | which
+          | you can use and play there whenever you want.
       .sport__img.sport__img--5
         img(src='/img/sportArea/tenis.jpg' alt='wellness_picture')
       .rozpis.sport__rozvrh.sport__rozvrh--5
@@ -118,12 +169,12 @@ block content
           thead
             tr
               th
-                h2 Pondelok - Utorok
+                h2 Monday - Tuesday
           tbody
             tr
               td 16:00 - 20:00
             tr
               th
-                h2 Sobota - Nedeľa
+                h2 Saturday - Sunday
             tr
               td 8:00 - 10:00

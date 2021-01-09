@@ -1,20 +1,73 @@
 extends regionyBase
 
 block content
+  header.header
+    .navigation-wrap.start-header.start-style.animate__bounceInDown.animate__animated
+      .container
+        .row
+          .col-12
+            nav.navbar.navbar-expand-md
+              a.navbar-brand(href='/')
+                img(src='/img/logo2.png' alt='logo')
+              .menu-wrapper.navbar-toggler.p-0(data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                .hamburger-menu
+              #navbarSupportedContent.collapse.navbar-collapse.links
+                ul.navbar-nav.ml-auto.py-4.py-md-0
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/') Home
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') About
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/gallery')
+                        span Gallery
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/rules')
+                        span Rules
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Services
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/memberships')
+                        span Memberships
+                      a.dropdown-item.overlayLeftBtn.mt-2.mb-2.pl-3(href='/group-exercises')
+                        span
+                          | Group
+                          br
+                          | exercises
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/relax')
+                        span Relax
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/sport-areas')
+                        span
+                          | Sport
+                          br
+                          | Areas
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/trainers') Trainers
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Find gym
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn(href='/regions')
+                        span Regions
+                      a.dropdown-item.overlayLeftBtn(href='/extras')
+                        span Extras
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/about') Contact
+                  .nav-item.languages
+                    a(href='https://stargym.herokuapp.com/regiony')
+                      img.sk_flag(src='/img/slovakia.png' alt='sk_flag')
+                    img.uk_flag(src='/img/uk.png' alt='uk_flag')
   main
-    h2.regiony__title Celosvetový výber
-    p.regiony__paragraph Vyhľadaj fitko v tvojom meste!
+    h2.regiony__title FIND A STAR-GYM NEAR YOU
+    p.regiony__paragraph Start here to find the closest Star Gym along with location information.
     #map-continents
       ul.continents
         li.c1
-          a(href='/regiony/afrika') Africa
+          a(href='/regions/africa') Africa
         li.c2
-          a(href='/regiony/azia') Asia
+          a(href='/regions/asia') Asia
         li.c3
-          a(href='/regiony/australia') Australia
+          a(href='/regions/australia') Australia
         li.c4
-          a(href='/regiony/europa') Europe
+          a(href='/regions/europe') Europe
         li.c5
-          a(href='/regiony/severna-amerika') North America
+          a(href='/regions/north-america') North America
         li.c6
-          a(href='/regiony/juzna-amerika') South America
+          a(href='/regions/south-america') South America

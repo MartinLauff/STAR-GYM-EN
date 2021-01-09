@@ -1,15 +1,68 @@
 extends kontaktBase
 
 block content
+  header.header
+    .navigation-wrap.start-header.start-style.animate__bounceInDown.animate__animated
+      .container
+        .row
+          .col-12
+            nav.navbar.navbar-expand-md
+              a.navbar-brand(href='/')
+                img(src='/img/logo2.png' alt='logo')
+              .menu-wrapper.navbar-toggler.p-0(data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                .hamburger-menu
+              #navbarSupportedContent.collapse.navbar-collapse.links
+                ul.navbar-nav.ml-auto.py-4.py-md-0
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/') Home
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') About
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/gallery')
+                        span Gallery
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/rules')
+                        span Rules
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Services
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/memberships')
+                        span Memberships
+                      a.dropdown-item.overlayLeftBtn.mt-2.mb-2.pl-3(href='/group-exercises')
+                        span
+                          | Group
+                          br
+                          | exercises
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/relax')
+                        span Relax
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/sport-areas')
+                        span
+                          | Sport
+                          br
+                          | Areas
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/trainers') Trainers
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Find gym
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn(href='/regions')
+                        span Regions
+                      a.dropdown-item.overlayLeftBtn(href='/extras')
+                        span Extras
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/about') Contact
+                  .nav-item.languages
+                    a(href='https://stargym.herokuapp.com/kontakt')
+                      img.sk_flag(src='/img/slovakia.png' alt='sk_flag')
+                    img.uk_flag(src='/img/uk.png' alt='uk_flag')
   main
-    h2 Kontakt
+    h2 Contact
     .container-fluid
       .row
         .col-0.col-xl-1
         .col-12.col-xl-5
-          h3 Kontaktné informácie
+          h3 Contact information
         .col-0.col-xl-6
-          h3 Formulár
+          h3 Form
       .row.kontakt
         .col-0.col-xl-1
         .col-12.col-xl-5.align-items-center.d-flex.justify-content-center.mb-5.mb-xl-0.mx-xl-0
@@ -18,7 +71,7 @@ block content
               b
                 i StarGym – fitness centrum since 2002
             li
-              b Adresa
+              b Address
                 | : Čordákova 28, 040 01 Košice
             li
               b E-mail
@@ -33,23 +86,23 @@ block content
               b Twitter
                 |  : StarGymSK
             li
-              b Tel.č.
+              b Tel.num.
                 |  : 0948 411 746
         .col-12.col-xl-6.d-flex.justify-content-center
           form.login-form.rounded(action='#')
-            h1 Kontaktujte nás
+            h1 Contact us
             .textb
               input(type='text' required='')
-              .placeholder Meno
+              .placeholder Name
             .textb
               input(type='text' required='')
-              .placeholder Priezvisko
+              .placeholder Surname
             .textb
               input(type='text' required='')
               .placeholder Email
             .textb.mb-5
               input(type='password' required='')
-              .placeholder Telefón
-            label(for='text') Odkaz:
+              .placeholder Mobile 
+            label(for='text') Message:
             textarea#text(name='text' rows='8')
-            button.btn.fas.fa-arrow-right.fa-3x  Odoslať
+            button.btn.fas.fa-arrow-right.fa-3x  Send 

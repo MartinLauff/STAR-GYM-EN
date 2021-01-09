@@ -1,19 +1,73 @@
 extends homebase
 
 block content
+  header.header
+    .navigation-wrap.start-header.start-style.animate__bounceInDown.animate__animated
+      .container
+        .row
+          .col-12
+            nav.navbar.navbar-expand-md
+              a.navbar-brand(href='/')
+                img(src='/img/logo2.png' alt='logo')
+              .menu-wrapper.navbar-toggler.p-0(data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                .hamburger-menu
+              #navbarSupportedContent.collapse.navbar-collapse.links
+                ul.navbar-nav.ml-auto.py-4.py-md-0
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/') Home
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') About
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/gallery')
+                        span Gallery
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/rules')
+                        span Rules
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Services
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/memberships')
+                        span Memberships
+                      a.dropdown-item.overlayLeftBtn.mt-2.mb-2.pl-3(href='/group-exercises')
+                        span
+                          | Group
+                          br
+                          | exercises
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/relax')
+                        span Relax
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/sport-areas')
+                        span
+                          | Sport
+                          br
+                          | Areas
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/trainers') Trainers
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Find gym
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn(href='/regions')
+                        span Regions
+                      a.dropdown-item.overlayLeftBtn(href='/extras')
+                        span Extras
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/about') Contact
+                  .nav-item.languages
+                    a(href='https://stargym.herokuapp.com/')
+                      img.sk_flag(src='/img/slovakia.png' alt='sk_flag')
+                    img.uk_flag(src='/img/uk.png' alt='uk_flag')
+
   section.section__carousel2.hiding
     .main-carousel(data-flickity='{"wrapAround": true, "autoPlay": false }')
       .carousel-cell.carousel-cell2
         img(src='./img/carusel-1.png' alt='fitness')
         h1.animate__bounceInLeft.animate__animated.titlecar2
-          | Začni meniť svoje
+          | Action is the
           br
-          |       svoje cieľe
+          |       foundational
           br
-          |       hneď teraz
+          |       key to success
         .next__button.next__button2
           a.cta(href='/clenstva')
-            span.btnspan Viac info
+            span.btnspan More info
             span
               svg(width='66px' height='25px' viewBox='0 0 66 43' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
                 g#arrow(stroke='none' stroke-width='1' fill='none' fill-rule='evenodd')
@@ -23,14 +77,14 @@ block content
       .carousel-cell.carousel-cell2
         img(src='./img/carusel-2.png' alt='workout')
         h1.animate__bounceInLeft.animate__animated.titlecar2
-          | Naše fitness centrá
+          | Our fitness centers
           br
-          |       sú uplne
+          |       are totally
           br
-          |       pre každého
+          |       for everyone
         .next__button.next__button2
           a.cta(href='/clenstva')
-            span.btnspan Viac info
+            span.btnspan More info
             span
               svg(width='66px' height='25px' viewBox='0 0 66 43' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
                 g#arrow(stroke='none' stroke-width='1' fill='none' fill-rule='evenodd')
@@ -40,14 +94,14 @@ block content
       .carousel-cell.carousel-cell2
         img(src='./img/carusel-3.png' alt='fitness')
         h1.animate__bounceInLeft.animate__animated.titlecar2
-          | Trénuj na špičkových
+          | Exercise on special
           br
-          |       a kvalitných
+          |       and great-quality
           br
-          |       strojoch
+          |       machines
         .next__button.next__button2
           a.cta(href='/clenstva')
-            span.btnspan Viac info
+            span.btnspan More info
             span
               svg(width='66px' height='25px' viewBox='0 0 66 43' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
                 g#arrow(stroke='none' stroke-width='1' fill='none' fill-rule='evenodd')
@@ -57,14 +111,14 @@ block content
       .carousel-cell.carousel-cell2
         img(src='./img/carusel-4.jpg' alt='cardio')
         h1.animate__bounceInLeft.animate__animated.titlecar2
-          | Viac ako 1000 
+          | More than 1000 
           br
-          |       fitiek
+          |       gyms around
           br
-          |       vo svete
+          |        the world
         .next__button.next__button2
           a.cta(href='/clenstva')
-            span.btnspan Viac info
+            span.btnspan More info
             span
               svg(width='66px' height='25px' viewBox='0 0 66 43' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
                 g#arrow(stroke='none' stroke-width='1' fill='none' fill-rule='evenodd')
@@ -72,17 +126,17 @@ block content
                   path.two(d='M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z' fill='#FFFFFF')
                   path.three(d='M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z' fill='#FFFFFF')
   h1.animate__bounceInLeft.animate__animated.titlecar1
-    | Náš cieľ je
+    | Our goal is
     br
-    |       dosiahnuť
+    |       to reach
     br
-    |       ten váš
+    |       yours 
   video(autoplay='' loop='' muted='')
     source(src='./img/vid.mp4' type='video/mp4')
     |       Your browser does not support the video tag.
   .next__button.next__button1
-    a.cta(href='/treneri')
-      span.btnspan Viac info
+    a.cta(href='/trainers')
+      span.btnspan More info
       span
         svg(width='66px' height='25px' viewBox='0 0 66 43' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
           g#arrow(stroke='none' stroke-width='1' fill='none' fill-rule='evenodd')
@@ -95,28 +149,28 @@ block content
         .row
           h2.section__title.text-center.hl.t.animate__fadeIn.animate__animated
             span.hl
-              span.t Naše moderné fitness centrá sú pre každého
+              span.t Our gorgeous gyms are for everyone
         .row.m-5.justify-content-center.justify-content-lg-start
           h3.content__title.animate__fadeIn.animate__animated
-            | U nás si môžete zacvičiť v týchto priestoroch:
+            | In our gyms you can train in these places:
         .row
           .col-12.col-lg-6.mb-3.text-center.text-lg-left
             ul.podHeader__lists.operations__tab-container(style='list-style-type:none')
               li.podHeader__list
                 button.podHeader__list.operations__tab.operations__tab--1.operations__tab--active(data-tab='1')
-                  | Workout zona
+                  | Workout zone
               br
               li.podHeader__list
-                button.podHeader__list.operations__tab.operations__tab--2(data-tab='2')  Cardio zóna
+                button.podHeader__list.operations__tab.operations__tab--2(data-tab='2')  Cardio zone
               br
               li.podHeader__list
-                button.podHeader__list.operations__tab.operations__tab--3(data-tab='3')  Fitness zóna
+                button.podHeader__list.operations__tab.operations__tab--3(data-tab='3')  Fitness zone
               br
               li.podHeader__list
-                button.podHeader__list.operations__tab.operations__tab--4(data-tab='4')  Telocvičňa
+                button.podHeader__list.operations__tab.operations__tab--4(data-tab='4')  Gymnasium
               br
               li.podHeader__list
-                button.podHeader__list.operations__tab.operations__tab--5(data-tab='5')  Multifunkčné ihrisko
+                button.podHeader__list.operations__tab.operations__tab--5(data-tab='5')  Multifunctional playground
           .imgs__podheader.col-10.col-md-10.col-lg-6
             img.podHeader__img.podHeader__img1.operations__content.operations__content--1.operations__content--active(src='./img/machines.jpg' alt='cardio zone')
             img.podHeader__img.podHeader__img2.operations__content.operations__content--2(src='./img/cardio.jpg' alt='workout')
@@ -128,111 +182,111 @@ block content
         .carousel-cell
           img(src='./img/reception.jpg' alt='fitness')
           p
-            | Viac ako 1000 fitness
+            | More than 1000 fitness
             br
-            |             centier po celom svete
+            |             centers around the world
           b
-            | Budťe jeden z členov
+            | Be one of the members
             br
-            |             nášho celosvetového fitka
+            |             of this excellent gym
           button.circleScaleBtn
-            span Zistiť viac
+            span More info
         .carousel-cell
           img(src='./img/stroje.jpg' alt='workout')
           p
-            | Trénuj na špičkových
+            | Exercise on special
             br
-            |             profesiálnych strojoch
+            |             and high-quality machines
           b
-            | Špičkové stroje so špičkovými
+            | Super machines with super
             br
-            |             trénermi sú tu len pre vás
+            |             trainers especially for you
           button.circleScaleBtn
-            span Zistiť viac
+            span More info
         .carousel-cell
           img(src='./img/menlifting1.jpg' alt='fitness')
           p
-            | Naše fitness centrá
+            | Our fitness centers
             br
-            |             sú pre každého
+            |             are for everyone
           b
-            | Rôzne stroje a vychytávky
+            | Different machines which
             br
-            |  ktoré inde nenájdete
+            |  you don't find anywhere else 
           button.circleScaleBtn
-            span Zistiť viac
+            span More info
         .carousel-cell
           img(src='./img/planking.png' alt='cardio')
           p
-            | Každým tréningom
+            | With each training
             br
-            |             bližsie k cieľu
+            |             closer to your goal
           b
-            | Pozrite si naše fitko z pohodlia
+            | You are able to see our gym from
             br
-            |             vášho domova cez live kameru
+            |             your home through a camera
           button.circleScaleBtn
-            span Zistiť viac
+            span More info
         .carousel-cell
           img(src='./img/trainer.jpg' alt='workout')
           p
-            | Začni meniť svoje
+            | Start to change your
             br
-            |             telo už dnes!
+            |             body today!
           b
-            | Ukáž svojim blízkym
+            | Show your friends
             br
-            |             svoju celoživotnú formu
+            |             your new great form
           button.circleScaleBtn
-            span Zistiť viac
+            span More info
     section.section__testimonials
       .testimonials__title
         h2.section__title.text-center.hl.t
-          | Millióny bodybuilderov si už teraz zjednodušujú život.
+          | Lot of bodybuilders have been already changing their life.
       .testimonials__content
         .testimonials__feature.testimonials__feature--1
           h4.testimonials__header Daniel H.
           p.text-center
-            | Parádne fitko, milý personál, kvalitné      stroje, funkčná zóna, kardio-zóna, sprchy,
-            | sauna, a to všetko za
-            | bezkonkurenčnú cenu. Odporúčam všetkým, čo prepadli nadšeniu byť fit!
+            | Hands down, best choice I’ve made training at Star-gym.
+            | VERY friendly team who make me actually want to go train.I look
+            | forward to walking through the doors and always feel amazing when I leave
         .img__position--1
           img.testimonials__img(src='./img/test2.jpg')
         .testimonials__feature.testimonials__feature--2
-          h4.testimonials__header Veronika B.
+          h4.testimonials__header Sarah B.
           p.text-center
-            | Skvelý pocit, skvelá atmosféra, obrovské a priestranné, nemám čo viac povedať som
-            | neskutočne spokojná,
-            | ďakujem za skvelý zážitok, určite sa vidíme nabudúce!
+            | Star-Gym has been awesome to me. Their trainers are exceptional,
+            | the overall vibe is great and I have had nothing but good experiences
+            | I definitely want to recommend them to all my friends and family.
         .img__position--2
           img.testimonials__img(src='./img/typkina.jpg')
         .testimonials__feature.testimonials__feature--3
-          h4.testimonials__header Ján P.
+          h4.testimonials__header Mike P.
           p.text-center
-            | Perfektný prístup personálu a zároveň skvelé vybavenie. Momentálne najviac využívam
-            | kardio zónu, kde
-            | oceňujem veľké miesto aj na iné cviky.
+            | Excellent personal training. Trainers who really care and go above
+            | and beyond to help you achieve your goals.
+            | Small and private gym that feels more personal. Highly recommended!
         .img__position--3
           img.testimonials__img(src='./img/test4.jpg')
         .testimonials__feature.testimonials__feature--4
-          h4.testimonials__header Matúš K.
+          h4.testimonials__header Jason K.
           p.text-center
-            | Bol som vo viacerých fit centrách v Košiciach a aj mimo Košíc a zatiaľ najlepšie fitko.
-            | Tento názor so mnou
-            | zdieľajú aj všetci moji známi.
+            |  I love this place. I highly recommend this place to anyone who wants to get in shape. The trainers are really awesome and helpful, they make you feel
+            | really comfortable. The 45 min training goes super fast and you really
+            | enjoy doing it. Everyday is a new training, so it is never boring.
         .img__position--4
           img.testimonials__img(src='./img/test8.jpg')
     section.section__newsletter
       .row.justify-content-end.align-items-center.mr-0.ml-0
         .col-12.col-xl-6.newsletter__title.pr-0
           p
-            | Staň sa odoberateľom a získaj
+            | Become our member and get
             br
-            |  tie najlepšie výhody
+            |  lot of adventages
         .col-12.col-xl-6.newsletter_content.pr-0
           form
             input#email(type='email')
-            label(for='email') Vaša emailová adresa:
-            button#button Odoslať
+            label(for='email') Your email address:
+            button#button Send
 
 

@@ -10,15 +10,15 @@ mixin card(name, trainer, date, price, location, slug)
     p.info= date
   .course__price
     img.course__icon(src='https://img.icons8.com/wired/64/000000/flex-biceps.png')
-    p.info= `${price}€ / na mesiac`
+    p.info= `${price}€ / month`
   .course__location
     img.course__icon(src='https://img.icons8.com/ios-filled/50/000000/marker.png')
     p.info= location
-  a.course__link(href=`/skupinove-cvicenia/${slug}`) Zobraziť viac
+  a.course__link(href=`/group-exercises/${slug}`) Find out more
 
 block content
   main.skupArea__grid
-    h2.skup__title Skupinové cvičenia
+    h2.skup__title Group exercises
     section.courses
 
       each exercise in exercises

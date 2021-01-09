@@ -9,11 +9,10 @@ exports.getOne = Model =>
   });
 
 exports.getGroupExercises = catchAsync(async (req, res) => {
-  // 1) Get tour data from collection
   const exercises = await Exercise.find();
 
   res.status(200).render('groupExercise', {
-    title: 'Skupinové cvičenia',
+    title: 'Group exercises',
     exercises
   });
 });

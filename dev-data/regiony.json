@@ -1,18 +1,25 @@
 [
   {
-    "_id": "5fed3adb7784491c4c35a2d0",
-    "name": "Ázia",
-    "slug": "azia",
+    "_id": "5fed3adb7784491c4c35a244",
+    "name": "Asia",
+    "slug": "asia",
     "futureCentre": 2,
-    "centerQuatity": "7 FITNESS CENTIER",
-    "description": "Od centra mesta po módnu zátoku sú naše telocvične Star Gym navrhnuté tak, aby inšpirovali. Každé miesto poskytuje základné prvky pohody, vrátane inovatívnych kurzov, výnimočných trénerov a teraz s novou Cardio Running Lab, našeho prielomového samostatného bežeckého štúdia, iba na trati Sport Hill.",
-    "cityList": ["Soul", "Tokyo", "Hong Kong", "Taipei", "Šanghaj", "Peking"],
-    "regionName": "Ázijské",
+    "centerQuatity": "7 FITNESS CENTRES",
+    "description": "From the city center to the Fashion Bay, our Star Gym is designed to inspire. Each venue provides essential elements of well-being, including innovative courses, exceptional trainers and now with the new Cardio Running Lab, our groundbreaking running studio, just on the Sport Hill track.",
+    "cityList": [
+      "Seoul",
+      "Tokyo",
+      "Hong Kong",
+      "Taipei",
+      "Shanghai",
+      "Beijing"
+    ],
+    "regionName": "Asian",
     "imageCover": "asia.jpg",
     "imgList": ["asia-1.jpg", "asia-2.jpg", "asia-3.jpg"],
     "locations": [
       {
-        "description": "Soul",
+        "description": "Seoul",
         "type": "Point",
         "coordinates": [127.024612, 37.5326]
       },
@@ -32,31 +39,31 @@
         "coordinates": [121.597366, 25.105497]
       },
       {
-        "description": "Šanghaj",
+        "description": "Shanghai",
         "type": "Point",
         "coordinates": [121.46917, 31.224361]
       },
       {
-        "description": "Peking",
+        "description": "Beijing",
         "type": "Point",
         "coordinates": [116.383331, 39.916668]
       }
     ],
     "exercises": [
-      "5c88fa8cf4afda39709c2955",
-      "5c88fa8cf4afda39709c295a",
-      "5c88fa8cf4afda39709c2951"
+      "5c88fa8cf4afda39709c2962",
+      "5c88fa8cf4afda39709c2962",
+      "5c88fa8cf4afda39709c296b"
     ]
   },
   {
-    "_id": "5fed3adb7784491c4c35a2d8",
-    "name": "Austrália",
+    "_id": "5c88fa8cf4afda39709c296b",
+    "name": "Australia",
     "slug": "australia",
     "futureCentre": 2,
-    "centerQuatity": "4 FITNESS CENTRÁ",
-    "description": "Od centra mesta po módnu zátoku sú naše telocvične Star Gym navrhnuté tak, aby inšpirovali. Každé miesto poskytuje základné prvky pohody, vrátane inovatívnych kurzov, výnimočných trénerov a teraz s novou Cardio Running Lab, našeho prielomového samostatného bežeckého štúdia, iba na trati Sport Hill.",
+    "centerQuatity": "4 FITNESS CENTRES",
+    "description": "From the city center to the Fashion Bay, our Star Gym is designed to inspire. Each venue provides essential elements of well-being, including innovative courses, exceptional trainers and now with the new Cardio Running Lab, our groundbreaking running studio, just on the Sport Hill track.",
     "cityList": ["Sydney", "Melbourne", "Auckland", "Wellington"],
-    "regionName": "Australské",
+    "regionName": "Australian",
     "imageCover": "australia.jpg",
     "imgList": ["australia-1.jpg", "australia-2.jpg", "australia-3.jpg"],
     "locations": [
@@ -82,49 +89,49 @@
       }
     ],
     "exercises": [
-      "5c88fa8cf4afda39709c295a",
-      "5c88fa8cf4afda39709c2955",
-      "5c88fa8cf4afda39709c2951"
+      "5c88fa8cf4afda39709c2962",
+      "5c88fa8cf4afda39709c2961",
+      "5c88fa8cf4afda39709c296b"
     ]
   },
   {
     "_id": "5fed3adb7784491c4c35a2dd",
-    "name": "Afrika",
-    "slug": "afrika",
+    "name": "Africa",
+    "slug": "africa",
     "futureCentre": 3,
-    "centerQuatity": "2 FITNESS CENTRÁ",
-    "description": "Od centra mesta po módnu zátoku sú naše telocvične Star Gym navrhnuté tak, aby inšpirovali. Každé miesto poskytuje základné prvky pohody, vrátane inovatívnych kurzov, výnimočných trénerov a teraz s novou Cardio Running Lab, našeho prielomového samostatného bežeckého štúdia, iba na trati Sport Hill.",
-    "cityList": ["Pretória", "Kapské Mesto"],
-    "regionName": "Africké",
+    "centerQuatity": "2 FITNESS CENTRES",
+    "description": "From the city center to the Fashion Bay, our Star Gym is designed to inspire. Each venue provides essential elements of well-being, including innovative courses, exceptional trainers and now with the new Cardio Running Lab, our groundbreaking running studio, just on the Sport Hill track.",
+    "cityList": ["Pretoria", "Cape Town"],
+    "regionName": "African",
     "imageCover": "africa.jpg",
     "imgList": ["africa-1.jpg", "africa-2.jpg", "africa-3.jpg"],
     "locations": [
       {
-        "description": "Pretória",
+        "description": "Pretoria",
         "type": "Point",
         "coordinates": [28.21837, -25.73134]
       },
       {
-        "description": "Kapské Mesto",
+        "description": "Cape Town",
         "type": "Point",
         "coordinates": [18.4233, -33.918861]
       }
     ],
     "exercises": [
-      "5c88fa8cf4afda39709c2955",
-      "5c88fa8cf4afda39709c2951",
-      "5c88fa8cf4afda39709c295a"
+      "5c88fa8cf4afda39709c2961",
+      "5c88fa8cf4afda39709c296b",
+      "5c88fa8cf4afda39709c2962"
     ]
   },
   {
-    "_id": "5fed3adb7784491c4c35a2e0",
-    "name": "J. Amerika",
-    "slug": "juzna-amerika",
+    "_id": "5fed3adb7784491c4c35a200",
+    "name": "S. America",
+    "slug": "south-america",
     "futureCentre": 4,
-    "centerQuatity": "3 FITNESS CENTRÁ",
-    "description": "Od centra mesta po módnu zátoku sú naše telocvične Star Gym navrhnuté tak, aby inšpirovali. Každé miesto poskytuje základné prvky pohody, vrátane inovatívnych kurzov, výnimočných trénerov a teraz s novou Cardio Running Lab, našeho prielomového samostatného bežeckého štúdia, iba na trati Sport Hill.",
+    "centerQuatity": "3 FITNESS CENTRES",
+    "description": "From the city center to the Fashion Bay, our Star Gym is designed to inspire. Each venue provides essential elements of well-being, including innovative courses, exceptional trainers and now with the new Cardio Running Lab, our groundbreaking running studio, just on the Sport Hill track.",
     "cityList": ["Rio de Janeiro", "São Paulo", "Buenos Aires"],
-    "regionName": "Juhoamerické",
+    "regionName": "Southamerican",
     "imageCover": "southAmerica.jpg",
     "imgList": [
       "southAmerica-1.jpg",
@@ -149,18 +156,18 @@
       }
     ],
     "exercises": [
-      "5c88fa8cf4afda39709c2955",
-      "5c88fa8cf4afda39709c295a",
-      "5c88fa8cf4afda39709c2951"
+      "5c88fa8cf4afda39709c2962",
+      "5c88fa8cf4afda39709c296b",
+      "5c88fa8cf4afda39709c2961"
     ]
   },
   {
-    "_id": "5fed3adb7784491c4c35a2e4",
-    "name": "S. Amerika",
-    "slug": "severna-amerika",
+    "_id": "5fed3adb7784491c4c35a2ee",
+    "name": "N. America",
+    "slug": "north-america",
     "futureCentre": 4,
-    "centerQuatity": "8 FITNESS CENTIER",
-    "description": "Od centra mesta po módnu zátoku sú naše telocvične Star Gym navrhnuté tak, aby inšpirovali. Každé miesto poskytuje základné prvky pohody, vrátane inovatívnych kurzov, výnimočných trénerov a teraz s novou Cardio Running Lab, našeho prielomového samostatného bežeckého štúdia, iba na trati Sport Hill.",
+    "centerQuatity": "8 FITNESS CENTRES",
+    "description": "From the city center to the Fashion Bay, our Star Gym is designed to inspire. Each venue provides essential elements of well-being, including innovative courses, exceptional trainers and now with the new Cardio Running Lab, our groundbreaking running studio, just on the Sport Hill track.",
     "cityList": [
       "Montreal",
       "Ottawa",
@@ -171,7 +178,7 @@
       "Chicago",
       "Minneapolis"
     ],
-    "regionName": "Severoamerické",
+    "regionName": "Northamerican",
     "imageCover": "northAmerica.jpg",
     "imgList": [
       "northAmerica-1.jpg",
@@ -221,30 +228,30 @@
       }
     ],
     "exercises": [
-      "5c88fa8cf4afda39709c2961",
-      "5c88fa8cf4afda39709c295a",
-      "5c88fa8cf4afda39709c2951"
+      "5c88fa8cf4afda39709c296b",
+      "5c88fa8cf4afda39709c2962",
+      "5c88fa8cf4afda39709c2961"
     ]
   },
   {
-    "_id": "5fed3adb7784491c4c35a2ed",
-    "name": "Európa",
-    "slug": "europa",
+    "_id": "5fed3adb7784491c4c35a2da",
+    "name": "Europe",
+    "slug": "europe",
     "futureCentre": 4,
-    "centerQuatity": "9 FITNESS CENTIER",
-    "description": "Od centra mesta po módnu zátoku sú naše telocvične Star Gym navrhnuté tak, aby inšpirovali. Každé miesto poskytuje základné prvky pohody, vrátane inovatívnych kurzov, výnimočných trénerov a teraz s novou Cardio Running Lab, našeho prielomového samostatného bežeckého štúdia, iba na trati Sport Hill.",
+    "centerQuatity": "9 FITNESS CENTRES",
+    "description": "From the city center to the Fashion Bay, our Star Gym is designed to inspire. Each venue provides essential elements of well-being, including innovative courses, exceptional trainers and now with the new Cardio Running Lab, our groundbreaking running studio, just on the Sport Hill track.",
     "cityList": [
       "Madrid",
-      "Paríž",
-      "Berlín",
-      "Viedeň",
-      "Budapešť",
-      "Rím",
-      "Varšava",
-      "Bukurešť",
-      "kyjev"
+      "Paris",
+      "Berlin",
+      "Vienna",
+      "Budapest",
+      "Rome",
+      "Warsaw",
+      "Bucharest",
+      "Kyiv"
     ],
-    "regionName": "Európske",
+    "regionName": "European",
     "imageCover": "europe.jpg",
     "imgList": ["europe-1.jpg", "europe-2.jpg", "europe-3.jpg"],
     "locations": [
@@ -254,7 +261,7 @@
         "coordinates": [-3.70379, 40.416775]
       },
       {
-        "description": "Paríž",
+        "description": "Paris",
         "type": "Point",
         "coordinates": [2.349014, 48.864716]
       },
@@ -264,40 +271,40 @@
         "coordinates": [13.404954, 52.520008]
       },
       {
-        "description": "Viedeň",
+        "description": "Vienna",
         "type": "Point",
         "coordinates": [16.363449, 48.210033]
       },
       {
-        "description": "Budapešť",
+        "description": "Budapest",
         "type": "Point",
         "coordinates": [19.040236, 47.497913]
       },
       {
-        "description": "Rím",
+        "description": "Rome",
         "type": "Point",
         "coordinates": [12.496366, 41.902782]
       },
       {
-        "description": "Varšava",
+        "description": "Warsaw",
         "type": "Point",
         "coordinates": [21.017532, 52.237049]
       },
       {
-        "description": "Bukurešť",
+        "description": "Bucharest",
         "type": "Point",
         "coordinates": [26.096306, 44.439663]
       },
       {
-        "description": "kyjev",
+        "description": "Kyiv",
         "type": "Point",
         "coordinates": [30.517023, 50.431759]
       }
     ],
     "exercises": [
-      "5c88fa8cf4afda39709c295a",
       "5c88fa8cf4afda39709c2961",
-      "5c88fa8cf4afda39709c2951"
+      "5c88fa8cf4afda39709c2962",
+      "5c88fa8cf4afda39709c296b"
     ]
   }
 ]

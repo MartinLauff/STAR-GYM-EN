@@ -2,6 +2,60 @@ extends regionBase
 include _exerciseCard
 
 block content
+  header.header
+    .navigation-wrap.start-header.start-style.animate__bounceInDown.animate__animated
+      .container
+        .row
+          .col-12
+            nav.navbar.navbar-expand-md
+              a.navbar-brand(href='/')
+                img(src='/img/logo2.png' alt='logo')
+              .menu-wrapper.navbar-toggler.p-0(data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                .hamburger-menu
+              #navbarSupportedContent.collapse.navbar-collapse.links
+                ul.navbar-nav.ml-auto.py-4.py-md-0
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/') Home
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') About
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/gallery')
+                        span Gallery
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/rules')
+                        span Rules
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Services
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/memberships')
+                        span Memberships
+                      a.dropdown-item.overlayLeftBtn.mt-2.mb-2.pl-3(href='/group-exercises')
+                        span
+                          | Group
+                          br
+                          | exercises
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/relax')
+                        span Relax
+                      a.dropdown-item.overlayLeftBtn.pl-3(href='/sport-areas')
+                        span
+                          | Sport
+                          br
+                          | Areas
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/trainers') Trainers
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Find gym
+                    .dropdown-menu.border-0.bg-transparent
+                      a.dropdown-item.overlayLeftBtn(href='/regions')
+                        span Regions
+                      a.dropdown-item.overlayLeftBtn(href='/extras')
+                        span Extras
+                  li.nav-item.pl-md-0.ml-0.ml-md-4
+                    a.nav-link(href='/about') Contact
+                  .nav-item.languages
+                    a(href=`https://stargym.herokuapp.com/regiony/${region.slug}`)
+                      img.sk_flag(src='/img/slovakia.png' alt='sk_flag')
+                    img.uk_flag(src='/img/uk.png' alt='uk_flag')
+
   main
     section.section-header
       .header__hero
@@ -11,13 +65,13 @@ block content
         h2.heading-primary.animate__fadeInDown.animate__animated
           if region.slug === 'australia'
             span(class='australia__span')=`Star Gym ${region.name}`
-          else if region.slug === 'europa'
+          else if region.slug === 'europe'
             span(class='eu__span')=`Star Gym ${region.name}`
-          else if region.slug === 'afrika'
+          else if region.slug === 'africa'
             span(class='africa__span')=`Star Gym ${region.name}`
-          else if region.slug === 'juzna-amerika'
+          else if region.slug === 'south-america'
             span(class='south__span')=`Star Gym ${region.name}`
-          else if region.slug === 'severna-amerika'
+          else if region.slug === 'north-america'
             span(class='north__span')=`Star Gym ${region.name}`
           else 
             span(class='asia__span')=`Star Gym ${region.name}`
@@ -25,7 +79,7 @@ block content
           .heading-box__detail
             svg.heading-box__icon
               use(xlink:href='/img/icons.svg#icon-flag')
-            span=`${region.futureCentre} budúce centrá` 
+            span=`${region.futureCentre} future centres` 
           .heading-box__detail
             svg.heading-box__icon
               use(xlink:href='/img/icons.svg#icon-map-pin')
@@ -34,11 +88,11 @@ block content
     section.section-description
       .overview-box
         h3.heading-secondary
-          p Pridaj sa k nám 
-          p už dnes
+          p Join us
+          p today
         p.description__text= region.description
       .description-box
-        h3.heading-secondary=`${region.regionName} strediská`
+        h3.heading-secondary=`${region.regionName} centres`
         ul
           each city in region.cityList
             li.overview-box__detail= city
@@ -55,22 +109,22 @@ block content
         .exercises
           each exercise in region.exercises
             +exerciseCard(exercise)
-    else if region.slug === 'europa'
+    else if region.slug === 'europe'
       section.section-exercises(class='eu__span')
         .exercises
           each exercise in region.exercises
             +exerciseCard(exercise)
-    else if region.slug === 'afrika'
+    else if region.slug === 'africa'
       section.section-exercises(class='africa__span')
         .exercises
           each exercise in region.exercises
             +exerciseCard(exercise)
-    else if region.slug === 'juzna-amerika'
+    else if region.slug === 'south-america'
       section.section-exercises(class='south__span')
         .exercises
           each exercise in region.exercises
             +exerciseCard(exercise)
-    else if region.slug === 'severna-amerika'
+    else if region.slug === 'north-america'
       section.section-exercises(class='north__span')
         .exercises
           each exercise in region.exercises
@@ -89,92 +143,91 @@ block content
             img(src='/img/logo2.png' alt='logo')
       .row.d-flex.justify-content-center.text-center
         .col-12.col-sm-5.col-md-2.d-sm-block.justify-content-center.mb-5.mb-sm-4
-          h5.footer-h PRODUKTY
+          h5.footer-h PRODUCTS
           ul.footer-list.w-list-unstyled.text-center(role='list')
             li.list-item
-              a.footer-link(href='#') Mapy
+              a.footer-link(href='#') Maps
             li
-              a.footer-link(href='#') Navigácia
+              a.footer-link(href='#') Navigation
             li
-              a.footer-link(href='#') Hľadať
+              a.footer-link(href='#') Search
             li
-              a.footer-link(href='#') O nás
+              a.footer-link(href='#') About us
             li
               a.footer-link(href='#') Vision SDK
             li
               a.footer-link(href='#') Home
             li
-              a.footer-link(href='#') Cenník
+              a.footer-link(href='#') Price List
         .col-12.col-sm-5.col-md-2.d-sm-block.justify-content-center.mb-5.mb-sm-4
-          h5.footer-h PLATFORMY
+          h5.footer-h PLATFORMS
           ul.footer-list.w-list-unstyled(role='list')
             li
               a.footer-link(href='#') Web
             li
-              a.footer-link(href='#') Mobil
+              a.footer-link(href='#') Mobile
             li
               a.footer-link(href='#') VR
             li
-              a.footer-link(href='#') Tablet
+              a.footer-link(href='#') Laptop
         .col-12.col-sm-5.col-md-2.d-sm-block.justify-content-center.mb-5.mb-sm-4
-          h5.footer-h PODPORA
+          h5.footer-h SUPPORT
           ul.footer-list.w-list-unstyled.pb-3(role='list')
             li
-              a.footer-link(href='#') Dokumentácia
-              a.footer-link(href='#') Platená podpora
+              a.footer-link(href='#') Documentation
+              a.footer-link(href='#') Paid Support
             li
-              a.footer-link(href='#') Poradenie
-              a.footer-link(href='#') Pomoc
+              a.footer-link(href='#') Advice
+              a.footer-link(href='#') Support
         .col-12.col-sm-5.col-md-2.d-sm-block.justify-content-center.mb-5.mb-sm-4
-          h5.footer-h Spoločnosť
+          h5.footer-h Company
           ul.footer-list.w-list-unstyled(role='list')
             li
-              a.footer-link(href='#') O nás
+              a.footer-link(href='#') About us
             li
-              a.footer-link(href='#') Zákazníci
+              a.footer-link(href='#') Customers
             li
-              a.footer-link(href='#') Sponzori
+              a.footer-link(href='#') Sponzors
             li
-              a.footer-link(href='#') Reklama
+              a.footer-link(href='#') Advertisements
             li
-              a.footer-link(href='#') Komunita
+              a.footer-link(href='#') Community
             li
-              a.footer-link(href='#') Kontakt
+              a.footer-link(href='#') Contact
         .col-12.col-sm-5.col-md-2.d-sm-block.justify-content-center.mb-5.mb-sm-4
-          h5.footer-h Ostatné
+          h5.footer-h Others
           ul.footer-list.w-list-unstyled(role='list')
             li
               a.footer-link(href='#') Relax
             li
               a.footer-link(href='#') Wellness
             li
-              a.footer-link(href='#') Logistika
+              a.footer-link(href='#') Logistics
             li
-              a.footer-link(href='#') Športové strediská
+              a.footer-link(href='#') Sport centers
             li
-              a.footer-link(href='#') Boxerské ringy
+              a.footer-link(href='#') Boxing rings
             li
-              a.footer-link(href='#') Reštaurácie
+              a.footer-link(href='#') Restaurant
             li
-              a.footer-link(href='#') Sauny
+              a.footer-link(href='#') Saunas
             li
-              a.footer-link(href='#') Udalosti
+              a.footer-link(href='#') Events
             li
               a.footer-link(href='#') Blog
       .row.justify-content-center.text-center.align-items-center
         .col-12.mb-3.col-lg-4
           a.footer-link.bottom-link(style='font-weight:normal;font-size:large' href='#')
-            | Zmluvné
-            | podmienky
+            | Terms & Conditions
           br
           a.footer-link.bottom-link(style='font-weight:normal;font-size:large' href='#')
-            | Súkromie
+            | Privacy
           a.footer-link.bottom-link(style='font-weight:normal;font-size:large' href='#')
-            | Bezpečnosť
+            | Security
           br
         .col-12.mb-3.col-lg-4.names
           div(style='font-weight:normal;font-size:large')
-            | Vytvoril 
+            | Created by 
             a(href='https://www.instagram.com/mato_157/')
               b
                 | Martin

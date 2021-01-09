@@ -56,6 +56,6 @@ button.addEventListener('click', function(e) {
   this.classList.add('is-done', 'is-active');
 
   setTimeout(function() {
-    button.innerHTML = 'Ďakujeme!';
+    button.innerHTML = 'Thank you!';
   }, 500);
 });
