@@ -63,7 +63,7 @@ block content
         img.header__hero-img(src=`/img/region/${region.imageCover}`)
       .heading-box
         h2.heading-primary.animate__fadeInDown.animate__animated
-          if region.slug === 'australia'
+          if region.slug === 'oceania'
             span(class='australia__span')=`Star Gym ${region.name}`
           else if region.slug === 'europe'
             span(class='eu__span')=`Star Gym ${region.name}`
@@ -104,7 +104,7 @@ block content
     section.section-map
       #map(data-locations=`${JSON.stringify(region.locations)}`)
 
-    if region.slug === 'australia'
+    if region.slug === 'oceania'
       section.section-exercises(class='australia__span')
         .exercises
           each exercise in region.exercises
